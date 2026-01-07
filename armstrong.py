@@ -92,7 +92,7 @@ class RelationScheme:
 if __name__=="__main__":
 
     r = RelationScheme(
-        {"CodiceFiscale", "Nome", "Cognome", "Città", "Regione"},
+        {"CodiceFiscale", "Nome", "Cognome", "Regione"},
         {
             Dependency({"CodiceFiscale"}, {"Nome", "Cognome", "Provincia"}),
             Dependency({"Provincia"}, {"Regione"}),
